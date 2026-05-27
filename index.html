@@ -214,6 +214,13 @@
     </div>
 
     <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        var links = document.querySelectorAll('.wiki-link');
+        
+        links.forEach(function(link) {
+            link.setAttribute('href', '/#/abnormalniraci');
+        });
+    });
         document.addEventListener('DOMContentLoaded', () => {
             const homepageView = document.getElementById('homepage-view');
             const articleView = document.getElementById('article-view');
